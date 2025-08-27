@@ -2,7 +2,7 @@
 This repository serves as the single source of truth for deploying a simple Node.js "Hello World" application onto a Kubernetes cluster using GitOps principles.
 
 ## 🚀 Project Overview
-The primary goal of this project is to demonstrate a modern DevOps workflow where the application's desired state in the cluster is declaratively defined and version-controlled in Git. A GitOps operator (like Argo CD or Flux) running in the cluster automatically syncs the state defined in this repository.
+The primary goal of this project is to demonstrate a modern DevOps workflow where the application's desired state in the cluster is declaratively defined and version-controlled in Git. A GitOps operator (like Argo CD) running in the cluster automatically syncs the state defined in this repository.
 
 ## Repositories
 This project is split into two distinct repositories:
