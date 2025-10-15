@@ -37,10 +37,15 @@ variable "ec2_instance_type" {
 variable "ec2_ami" {
   description = "The AMI ID for the EC2 instance."
   type        = string
-  default     = "ami-0c55b159cbfafe1f0"
+  default     = "ami-0bbdd8c17ed981ef9"
 }
 
-variable "ec2_key_name" {
-  description = "The name of the EC2 key pair for SSH access."
+variable "github_org" {
+  description = "value"
+  type        = string
+}
+
+variable "github_repo" {
+  description = "value"
   type        = string
 }
