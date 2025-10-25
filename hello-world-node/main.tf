@@ -5,7 +5,13 @@ resource "aws_instance" "web_server" {
   associate_public_ip_address = true
   vpc_security_group_ids = [aws_security_group.web_server.id]
   iam_instance_profile   = aws_iam_instance_profile.ec2_instance_profile.name
-  tags                   = { Name = "web-server-instance" }
   user_data              = file("initial_config.sh")
+
+  tags                   = { 
+    Name = "web-server-instance" 
+    Project   = "Web Server"
+    TargetSSM = "true"
+  }
+
 }
 
